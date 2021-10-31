@@ -36,7 +36,7 @@ struct VenuesListItemView: View {
 
     private var category: some View {
         let url = (Array(location.categories ?? []) as? [VenueCategory])?
-            .first { $0.iconPath != nil }
+            .first { $0.iconPath != nil &&  $0.iconPath?.isEmpty == false }
             .map { URL(string: $0.iconPath ?? "https://via.placeholder.com/300") }
         return AsyncImage(
             url: url!!,
