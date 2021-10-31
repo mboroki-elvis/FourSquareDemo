@@ -8,14 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		EE273E52272E5D81003A62CD /* FourSquareDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273E51272E5D81003A62CD /* FourSquareDemoApp.swift */; };
-		EE273E54272E5D81003A62CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273E53272E5D81003A62CD /* ContentView.swift */; };
+		EE273E54272E5D81003A62CD /* AppMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273E53272E5D81003A62CD /* AppMainView.swift */; };
 		EE273E56272E5D82003A62CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE273E55272E5D82003A62CD /* Assets.xcassets */; };
 		EE273E59272E5D82003A62CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE273E58272E5D82003A62CD /* Preview Assets.xcassets */; };
-		EE273E5B272E5D82003A62CD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273E5A272E5D82003A62CD /* Persistence.swift */; };
+		EE273E5B272E5D82003A62CD /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273E5A272E5D82003A62CD /* StorageService.swift */; };
 		EE273E5E272E5D82003A62CD /* FourSquareDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE273E5C272E5D82003A62CD /* FourSquareDemo.xcdatamodeld */; };
 		EE273E68272E5D82003A62CD /* FourSquareDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273E67272E5D82003A62CD /* FourSquareDemoTests.swift */; };
 		EE273E72272E5D82003A62CD /* FourSquareDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273E71272E5D82003A62CD /* FourSquareDemoUITests.swift */; };
 		EE273E74272E5D82003A62CD /* FourSquareDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273E73272E5D82003A62CD /* FourSquareDemoUITestsLaunchTests.swift */; };
+		EE273E81272E5ECC003A62CD /* FourSquareAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273E80272E5ECC003A62CD /* FourSquareAPI.swift */; };
+		EE273E84272E5F0A003A62CD /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273E83272E5F0A003A62CD /* AppEnvironment.swift */; };
+		EE273E87272E5FE6003A62CD /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273E86272E5FE6003A62CD /* Logger.swift */; };
+		EE273E8A272E6038003A62CD /* Runner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273E89272E6038003A62CD /* Runner.swift */; };
+		EE273E8C272E620F003A62CD /* PlacesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273E8B272E620F003A62CD /* PlacesResponse.swift */; };
+		EE273E8E272E658E003A62CD /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273E8D272E658E003A62CD /* Feedback.swift */; };
+		EE273E91272E6636003A62CD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273E90272E6636003A62CD /* Extension.swift */; };
+		EE273E97272E7457003A62CD /* VenuesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273E96272E7457003A62CD /* VenuesViewModel.swift */; };
+		EE273E9A272E7DDD003A62CD /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273E99272E7DDD003A62CD /* LocationManager.swift */; };
+		EE273E9C272E96AE003A62CD /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273E9B272E96AE003A62CD /* ImageCache.swift */; };
+		EE273E9F272E96D9003A62CD /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273E9E272E96D9003A62CD /* AsyncImage.swift */; };
+		EE273EA1272E9706003A62CD /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273EA0272E9706003A62CD /* ImageLoader.swift */; };
+		EE273EA4272E976E003A62CD /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273EA3272E976E003A62CD /* Spinner.swift */; };
+		EE273EA6272E97AB003A62CD /* VenuesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273EA5272E97AB003A62CD /* VenuesListView.swift */; };
+		EE273EA8272EA11D003A62CD /* VenueDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273EA7272EA11D003A62CD /* VenueDataHandler.swift */; };
+		EE273EAA272EA12A003A62CD /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273EA9272EA12A003A62CD /* DataHandler.swift */; };
+		EE273EAD272EA80A003A62CD /* VenueItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273EAC272EA80A003A62CD /* VenueItemListView.swift */; };
+		EE273EB0272EA84C003A62CD /* VenueDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273EAF272EA84C003A62CD /* VenueDetailView.swift */; };
+		EE273EB2272EA95A003A62CD /* VenueDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273EB1272EA95A003A62CD /* VenueDetailViewModel.swift */; };
+		EE273EB6272EC5DF003A62CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273EB5272EC5DF003A62CD /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,16 +58,37 @@
 /* Begin PBXFileReference section */
 		EE273E4E272E5D81003A62CD /* FourSquareDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourSquareDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE273E51272E5D81003A62CD /* FourSquareDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareDemoApp.swift; sourceTree = "<group>"; };
-		EE273E53272E5D81003A62CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE273E53272E5D81003A62CD /* AppMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainView.swift; sourceTree = "<group>"; };
 		EE273E55272E5D82003A62CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE273E58272E5D82003A62CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		EE273E5A272E5D82003A62CD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		EE273E5A272E5D82003A62CD /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		EE273E5D272E5D82003A62CD /* FourSquareDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FourSquareDemo.xcdatamodel; sourceTree = "<group>"; };
 		EE273E63272E5D82003A62CD /* FourSquareDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FourSquareDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE273E67272E5D82003A62CD /* FourSquareDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareDemoTests.swift; sourceTree = "<group>"; };
 		EE273E6D272E5D82003A62CD /* FourSquareDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FourSquareDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE273E71272E5D82003A62CD /* FourSquareDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareDemoUITests.swift; sourceTree = "<group>"; };
 		EE273E73272E5D82003A62CD /* FourSquareDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE273E80272E5ECC003A62CD /* FourSquareAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareAPI.swift; sourceTree = "<group>"; };
+		EE273E83272E5F0A003A62CD /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		EE273E86272E5FE6003A62CD /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		EE273E89272E6038003A62CD /* Runner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runner.swift; sourceTree = "<group>"; };
+		EE273E8B272E620F003A62CD /* PlacesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesResponse.swift; sourceTree = "<group>"; };
+		EE273E8D272E658E003A62CD /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
+		EE273E90272E6636003A62CD /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		EE273E96272E7457003A62CD /* VenuesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesViewModel.swift; sourceTree = "<group>"; };
+		EE273E99272E7DDD003A62CD /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		EE273E9B272E96AE003A62CD /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		EE273E9E272E96D9003A62CD /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		EE273EA0272E9706003A62CD /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		EE273EA3272E976E003A62CD /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		EE273EA5272E97AB003A62CD /* VenuesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesListView.swift; sourceTree = "<group>"; };
+		EE273EA7272EA11D003A62CD /* VenueDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDataHandler.swift; sourceTree = "<group>"; };
+		EE273EA9272EA12A003A62CD /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
+		EE273EAC272EA80A003A62CD /* VenueItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueItemListView.swift; sourceTree = "<group>"; };
+		EE273EAF272EA84C003A62CD /* VenueDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDetailView.swift; sourceTree = "<group>"; };
+		EE273EB1272EA95A003A62CD /* VenueDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDetailViewModel.swift; sourceTree = "<group>"; };
+		EE273EB4272EB8BD003A62CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE273EB5272EC5DF003A62CD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +139,17 @@
 		EE273E50272E5D81003A62CD /* FourSquareDemo */ = {
 			isa = PBXGroup;
 			children = (
+				EE273EB4272EB8BD003A62CD /* Info.plist */,
 				EE273E51272E5D81003A62CD /* FourSquareDemoApp.swift */,
-				EE273E53272E5D81003A62CD /* ContentView.swift */,
+				EE273E53272E5D81003A62CD /* AppMainView.swift */,
+				EE273E9D272E96B2003A62CD /* CustomViews */,
+				EE273E98272E7903003A62CD /* Modules */,
+				EE273E93272E6A4D003A62CD /* Configuration */,
+				EE273E8F272E659C003A62CD /* Abstract */,
+				EE273E88272E5FEC003A62CD /* Helpers */,
+				EE273E85272E5F11003A62CD /* Storage */,
+				EE273E82272E5EE1003A62CD /* API */,
 				EE273E55272E5D82003A62CD /* Assets.xcassets */,
-				EE273E5A272E5D82003A62CD /* Persistence.swift */,
 				EE273E5C272E5D82003A62CD /* FourSquareDemo.xcdatamodeld */,
 				EE273E57272E5D82003A62CD /* Preview Content */,
 			);
@@ -131,6 +179,108 @@
 				EE273E73272E5D82003A62CD /* FourSquareDemoUITestsLaunchTests.swift */,
 			);
 			path = FourSquareDemoUITests;
+			sourceTree = "<group>";
+		};
+		EE273E82272E5EE1003A62CD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EE273E89272E6038003A62CD /* Runner.swift */,
+				EE273E80272E5ECC003A62CD /* FourSquareAPI.swift */,
+				EE273E8B272E620F003A62CD /* PlacesResponse.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EE273E85272E5F11003A62CD /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				EE273E5A272E5D82003A62CD /* StorageService.swift */,
+				EE273EAB272EA3BD003A62CD /* DataHandler */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		EE273E88272E5FEC003A62CD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EE273E86272E5FE6003A62CD /* Logger.swift */,
+				EE273EB5272EC5DF003A62CD /* Constants.swift */,
+				EE273E99272E7DDD003A62CD /* LocationManager.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		EE273E8F272E659C003A62CD /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				EE273E8D272E658E003A62CD /* Feedback.swift */,
+				EE273E90272E6636003A62CD /* Extension.swift */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		EE273E93272E6A4D003A62CD /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				EE273E83272E5F0A003A62CD /* AppEnvironment.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		EE273E98272E7903003A62CD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EE273EAE272EA833003A62CD /* VenuesList */,
+				EE273EB3272EAD29003A62CD /* VenueDetail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EE273E9D272E96B2003A62CD /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				EE273EA2272E975A003A62CD /* ImageHandler */,
+				EE273EA3272E976E003A62CD /* Spinner.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		EE273EA2272E975A003A62CD /* ImageHandler */ = {
+			isa = PBXGroup;
+			children = (
+				EE273E9B272E96AE003A62CD /* ImageCache.swift */,
+				EE273E9E272E96D9003A62CD /* AsyncImage.swift */,
+				EE273EA0272E9706003A62CD /* ImageLoader.swift */,
+			);
+			path = ImageHandler;
+			sourceTree = "<group>";
+		};
+		EE273EAB272EA3BD003A62CD /* DataHandler */ = {
+			isa = PBXGroup;
+			children = (
+				EE273EA9272EA12A003A62CD /* DataHandler.swift */,
+				EE273EA7272EA11D003A62CD /* VenueDataHandler.swift */,
+			);
+			path = DataHandler;
+			sourceTree = "<group>";
+		};
+		EE273EAE272EA833003A62CD /* VenuesList */ = {
+			isa = PBXGroup;
+			children = (
+				EE273E96272E7457003A62CD /* VenuesViewModel.swift */,
+				EE273EA5272E97AB003A62CD /* VenuesListView.swift */,
+				EE273EAC272EA80A003A62CD /* VenueItemListView.swift */,
+			);
+			path = VenuesList;
+			sourceTree = "<group>";
+		};
+		EE273EB3272EAD29003A62CD /* VenueDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EE273EAF272EA84C003A62CD /* VenueDetailView.swift */,
+				EE273EB1272EA95A003A62CD /* VenueDetailViewModel.swift */,
+			);
+			path = VenueDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +413,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE273E5B272E5D82003A62CD /* Persistence.swift in Sources */,
+				EE273E8C272E620F003A62CD /* PlacesResponse.swift in Sources */,
+				EE273E5B272E5D82003A62CD /* StorageService.swift in Sources */,
+				EE273EA8272EA11D003A62CD /* VenueDataHandler.swift in Sources */,
+				EE273E8E272E658E003A62CD /* Feedback.swift in Sources */,
+				EE273E8A272E6038003A62CD /* Runner.swift in Sources */,
+				EE273EA6272E97AB003A62CD /* VenuesListView.swift in Sources */,
+				EE273E91272E6636003A62CD /* Extension.swift in Sources */,
 				EE273E5E272E5D82003A62CD /* FourSquareDemo.xcdatamodeld in Sources */,
-				EE273E54272E5D81003A62CD /* ContentView.swift in Sources */,
+				EE273EA1272E9706003A62CD /* ImageLoader.swift in Sources */,
+				EE273E54272E5D81003A62CD /* AppMainView.swift in Sources */,
+				EE273E97272E7457003A62CD /* VenuesViewModel.swift in Sources */,
 				EE273E52272E5D81003A62CD /* FourSquareDemoApp.swift in Sources */,
+				EE273E9C272E96AE003A62CD /* ImageCache.swift in Sources */,
+				EE273E9F272E96D9003A62CD /* AsyncImage.swift in Sources */,
+				EE273E87272E5FE6003A62CD /* Logger.swift in Sources */,
+				EE273E81272E5ECC003A62CD /* FourSquareAPI.swift in Sources */,
+				EE273EAD272EA80A003A62CD /* VenueItemListView.swift in Sources */,
+				EE273EAA272EA12A003A62CD /* DataHandler.swift in Sources */,
+				EE273E84272E5F0A003A62CD /* AppEnvironment.swift in Sources */,
+				EE273E9A272E7DDD003A62CD /* LocationManager.swift in Sources */,
+				EE273EB0272EA84C003A62CD /* VenueDetailView.swift in Sources */,
+				EE273EB2272EA95A003A62CD /* VenueDetailViewModel.swift in Sources */,
+				EE273EA4272E976E003A62CD /* Spinner.swift in Sources */,
+				EE273EB6272EC5DF003A62CD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +600,7 @@
 				DEVELOPMENT_TEAM = X5E66Q9HX8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FourSquareDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -459,6 +630,7 @@
 				DEVELOPMENT_TEAM = X5E66Q9HX8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FourSquareDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
