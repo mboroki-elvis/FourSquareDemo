@@ -19,6 +19,15 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
 
     static var shared = LocationManager()
 
+    private(set) var currentLocation: CLLocation? {
+        get {
+            return _currentLocation
+        }
+        set {
+            _currentLocation = newValue
+        }
+    }
+
     func setupManager() {
         // Locations get
         checkPermission()
@@ -31,7 +40,9 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
 
     func locationManager(_: CLLocationManager, didChangeAuthorization _: CLAuthorizationStatus) {}
 
-    func locationManager(_: CLLocationManager, didUpdateLocations _: [CLLocation]) {}
+    func locationManager(_: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        currentLocation = locations.first
+    }
 
     func locationManager(_: CLLocationManager, didFailWithError error: Error) {
         Logger.shared.log(error, #file, #line)
@@ -41,29 +52,20 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
 
     private var manager = CLLocationManager()
 
+    private var _currentLocation: CLLocation?
+
     private func checkPermission() {
-        if #available(iOS 14, *) {
-            switch manager.authorizationStatus {
-            case .denied, .notDetermined, .restricted:
-                manager.requestAlwaysAuthorization()
-                manager.requestWhenInUseAuthorization()
-            case .authorizedAlways, .authorizedWhenInUse:
-                break
-            @unknown default:
-                break
-            }
-        } else {
-            switch CLLocationManager.authorizationStatus() {
-            case .denied:
-                manager.requestAlwaysAuthorization()
-                manager.requestWhenInUseAuthorization()
-            case .notDetermined, .restricted:
-                break
-            case .authorizedAlways, .authorizedWhenInUse:
-                break
-            @unknown default:
-                break
-            }
+        switch manager.authorizationStatus {
+        case .denied,
+             .notDetermined,
+             .restricted:
+            manager.requestAlwaysAuthorization()
+            manager.requestWhenInUseAuthorization()
+        case .authorizedAlways,
+             .authorizedWhenInUse:
+            currentLocation = manager.location
+        @unknown default:
+            break
         }
     }
 }

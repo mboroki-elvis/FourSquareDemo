@@ -11,7 +11,9 @@ import SwiftUI
 struct FourSquareDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            AppMainView()
+            AppMainView().onAppear {
+                LocationManager.shared.setupManager()
+            }
         }
     }
 }
