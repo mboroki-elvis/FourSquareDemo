@@ -94,8 +94,8 @@ extension VenuesViewModel {
     static func whenLoading() -> Feedback<State, Event> {
         Feedback { (state: State) -> AnyPublisher<Event, Never> in
             guard case .loading = state else { return Empty().eraseToAnyPublisher() }
-
-            return FourSquareAPI.places(lat: 40.74224, long: -73.99386)
+            let coordinates = LocationManager.shared.currentLocation?.coordinate
+            return FourSquareAPI.places(lat: coordinates?.latitude ?? 40.74224, long: coordinates?.longitude ?? -73.99386)
                 .map { VenueDataHandler.saveAndReturnData(response: $0) }
                 .map(Event.onVenuesLoaded)
                 .catch { Just(Event.onNetworkErrorGetSaved($0, VenueDataHandler.getData())) }
