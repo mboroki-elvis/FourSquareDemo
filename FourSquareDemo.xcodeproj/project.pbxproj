@@ -36,6 +36,7 @@
 		EE273EB0272EA84C003A62CD /* VenueDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273EAF272EA84C003A62CD /* VenueDetailView.swift */; };
 		EE273EB2272EA95A003A62CD /* VenueDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273EB1272EA95A003A62CD /* VenueDetailViewModel.swift */; };
 		EE273EB6272EC5DF003A62CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE273EB5272EC5DF003A62CD /* Constants.swift */; };
+		EE273EB9272EF5C8003A62CD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE273EB8272EF5C8003A62CD /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		EE273EB1272EA95A003A62CD /* VenueDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDetailViewModel.swift; sourceTree = "<group>"; };
 		EE273EB4272EB8BD003A62CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE273EB5272EC5DF003A62CD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EE273EB8272EF5C8003A62CD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE273EB9272EF5C8003A62CD /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +126,7 @@
 				EE273E66272E5D82003A62CD /* FourSquareDemoTests */,
 				EE273E70272E5D82003A62CD /* FourSquareDemoUITests */,
 				EE273E4F272E5D81003A62CD /* Products */,
+				EE273EB7272EF5C8003A62CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -281,6 +285,14 @@
 				EE273EB1272EA95A003A62CD /* VenueDetailViewModel.swift */,
 			);
 			path = VenueDetail;
+			sourceTree = "<group>";
+		};
+		EE273EB7272EF5C8003A62CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE273EB8272EF5C8003A62CD /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -601,6 +613,10 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FourSquareDemo/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "For Best Services";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "For Best Services";
+				INFOPLIST_KEY_NSLocationUsageDescription = "For Best Services";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "For Best Services";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -631,6 +647,10 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FourSquareDemo/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "For Best Services";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "For Best Services";
+				INFOPLIST_KEY_NSLocationUsageDescription = "For Best Services";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "For Best Services";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
