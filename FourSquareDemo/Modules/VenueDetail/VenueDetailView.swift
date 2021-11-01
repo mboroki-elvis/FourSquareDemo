@@ -17,8 +17,12 @@ struct VenueDetailView: View {
     @Environment(\.imageCache) var cache: ImageCache
 
     var body: some View {
-        content
-            .onAppear { self.viewModel.send(event: .onAppear) }
+        NavigationView {
+            content
+        }
+        .onAppear {
+            self.viewModel.send(event: .onAppear)
+        }
     }
 
     // MARK: Private
@@ -59,19 +63,20 @@ struct VenueDetailView: View {
                 Divider()
 
                 VStack(alignment: .center) {
+                    Spacer()
                     Text("Address: \(data.location?.address ?? "")")
+                    Spacer()
                     Text("Cross street: \(data.location?.crossStreet ?? "")")
+                    Spacer()
                     Text("Postal code: \(data.location?.postalCode ?? "")")
+                    Spacer()
                     Text("City: \(data.location?.city ?? "")")
-                    Text("Distance from your location: \(data.location?.distance ?? 0) Meters")
+                    Spacer()
+                    Text("Distance from your location: \(data.location?.distance.rounded(.up) ?? 0) Meters")
                 }
                 .font(.subheadline)
 
                 genres(of: data.categories)
-
-                Divider()
-
-                Text(data.location?.formattedAddress ?? "").font(.body)
             }
         }
     }

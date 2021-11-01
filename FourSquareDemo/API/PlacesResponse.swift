@@ -65,7 +65,7 @@ struct Icon: Decodable {
 // MARK: - Location
 
 struct Location: Decodable {
-    let address, crossStreet: String
+    var address, crossStreet: String?
     let lat, lng: Double
     let labeledLatLngs: [LabeledLatLng]
     let distance: Int

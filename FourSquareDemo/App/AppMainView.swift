@@ -9,18 +9,18 @@ import CoreData
 import SwiftUI
 
 struct AppMainView: View {
-    @State var selectedIndex = 1
+    @State private var selectedIndex = 1
     @State private var selectedID = ""
-    
+    @StateObject private var venuesViewModel = VenuesViewModel()
     var body: some View {
         VStack {
-            Picker(selection: $selectedIndex, label: Text("Venues"), content: {
-                Text("Venues").tag(1)
+            Picker(selection: $selectedIndex, label: Text("Nearby Venues"), content: {
+                Text("Nearby Venues").tag(1)
                 Text("Venue Details").tag(2)
             }).pickerStyle(.segmented)
 
             if selectedIndex == 1 {
-                VenuesListView(viewModel:  VenuesViewModel()) { id in
+                VenuesListView(viewModel:  venuesViewModel) { id in
                     self.selectedID = id
                     self.selectedIndex = 2
                 }
