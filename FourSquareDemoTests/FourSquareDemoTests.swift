@@ -18,9 +18,20 @@ class FourSquareDemoTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testVenueCount() throws {
+        let model = VenuesViewModel()
+        model.send(event: .onAppear)
+        switch  model.state {
+        case .idle:
+            print("started")
+        case .loading:
+            print("loading")
+        case .loaded(let data):
+            XCTAssertEqual(VenueDataHandler.getData().count, data.count, "venue count must me equal to 5")
+        case .error(let error, let data):
+            Logger.shared.log(error, #file, #line)
+            XCTAssertEqual(VenueDataHandler.getData().count, data.count, "venue count must me equal to 5")
+        }
     }
 
     func testPerformanceExample() throws {
