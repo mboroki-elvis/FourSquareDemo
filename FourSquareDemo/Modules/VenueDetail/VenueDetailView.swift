@@ -34,7 +34,7 @@ struct VenueDetailView: View {
         case .loading:
             return spinner.eraseToAnyView()
         case .error(let error):
-            return Text(error.localizedDescription).eraseToAnyView()
+            return Text("Oooops!!! We encountered an error: \n\(error.localizedDescription)").eraseToAnyView()
         case .loaded(let location):
             return self.location(location).eraseToAnyView()
         }
