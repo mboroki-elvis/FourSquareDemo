@@ -23,9 +23,9 @@ class FourSquareDemoTests: XCTestCase {
         model.send(event: .onAppear)
         switch  model.state {
         case .idle:
-            print("started")
+            print("started: \(#file), \(#line)")
         case .loading:
-            print("loading")
+            print("loading: \(#file), \(#line)")
         case .loaded(let data):
             XCTAssertEqual(VenueDataHandler.getData().count, data.count, "venue count must me equal to 5")
         case .error(let error, let data):
@@ -34,6 +34,25 @@ class FourSquareDemoTests: XCTestCase {
         }
     }
 
+    func testSingleVenueSelection() throws {
+        let first = VenueDataHandler.getData().first
+        XCTAssertNotNil(first?.id)
+        let model = VenueDetailViewModel(id: first!.id!)
+        model.send(event: .onAppear)
+        switch  model.state {
+        case .idle:
+            print("started: \(#file), \(#line)")
+        case .loading:
+            print("loading: \(#file), \(#line)")
+        case .loaded(let data):
+            XCTAssertEqual(first?.id, data.id, "venue count must me equal to 5")
+        case .error(let error):
+            Logger.shared.log(error, #file, #line)
+            let id = (error as NSError).userInfo["location"] as? String
+            XCTAssertTrue(id == first?.id, "Error for id \(String(describing: id))")
+        }
+    }
+    
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {
