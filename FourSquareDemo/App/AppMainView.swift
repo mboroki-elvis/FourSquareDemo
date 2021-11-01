@@ -25,7 +25,8 @@ struct AppMainView: View {
                     self.selectedIndex = 2
                 }
             } else {
-                VenueDetailView(viewModel: VenueDetailViewModel(id: selectedID))
+                let id = selectedID.isEmpty ? (VenueDataHandler.getData().first?.id ?? "") : selectedID
+                VenueDetailView(viewModel: VenueDetailViewModel(id: id))
             }
         }
     }
