@@ -11,7 +11,7 @@ import SwiftUI
 struct AppMainView: View {
     @State var selectedIndex = 1
     @State private var selectedID = ""
-    @StateObject private var object = VenuesViewModel()
+    @StateObject private var venuesViewModel = VenuesViewModel()
     var body: some View {
         VStack {
             Picker(selection: $selectedIndex, label: Text("Nearby Venues"), content: {
@@ -20,7 +20,7 @@ struct AppMainView: View {
             }).pickerStyle(.segmented)
 
             if selectedIndex == 1 {
-                VenuesListView(viewModel:  object) { id in
+                VenuesListView(viewModel:  venuesViewModel) { id in
                     self.selectedID = id
                     self.selectedIndex = 2
                 }
