@@ -5,9 +5,9 @@
 	<key>BASE_URL</key>
 	<string>https:/$()/api.foursquare.com/</string>
 	<key>CLIENT_ID</key>
-	<string>RI1MEZ0CD44IIQ2CFHMYSHYYH1G2LEFW0ZFZEBL02VI0DJ0Q</string>
+	<string></string>
 	<key>CLIENT_SECRET</key>
-	<string>OBYBVSEDLAZNRN0LLCSRQ1AZ1HK2JXNYWHHULVOETX0MLOIZ</string>
+	<string></string>
 	<key>MKDirectionsApplicationSupportedModes</key>
 	<array>
 		<string>MKDirectionsModeBike</string>
