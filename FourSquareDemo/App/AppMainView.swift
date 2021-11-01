@@ -9,7 +9,7 @@ import CoreData
 import SwiftUI
 
 struct AppMainView: View {
-    @State var selectedIndex = 1
+    @State private var selectedIndex = 1
     @State private var selectedID = ""
     @StateObject private var venuesViewModel = VenuesViewModel()
     var body: some View {

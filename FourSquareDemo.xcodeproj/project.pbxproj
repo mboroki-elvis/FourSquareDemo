@@ -144,8 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				EE273EB4272EB8BD003A62CD /* Info.plist */,
-				EE273E51272E5D81003A62CD /* FourSquareDemoApp.swift */,
-				EE273E53272E5D81003A62CD /* AppMainView.swift */,
+				EE885B4A272FC51100DEF97E /* App */,
 				EE273E9D272E96B2003A62CD /* CustomViews */,
 				EE273E98272E7903003A62CD /* Modules */,
 				EE273E93272E6A4D003A62CD /* Configuration */,
@@ -293,6 +292,15 @@
 				EE273EB8272EF5C8003A62CD /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE885B4A272FC51100DEF97E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EE273E51272E5D81003A62CD /* FourSquareDemoApp.swift */,
+				EE273E53272E5D81003A62CD /* AppMainView.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
